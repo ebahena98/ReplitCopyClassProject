@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .about-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .about-content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="about-title">About ToroGrub</h1>
+    <div class="about-content">
+        <p>
+            The ToroGrub project is aimed at creating a webpage where students can buy and sell food items
+            to each other within their campus community. It serves as a convenient marketplace for
+            students to discover, purchase, and sell food items as an alternative to the food choices
+            offered during the day at the dining hall.
+        </p>
+    </div>
+</div>
+
+{% endblock %}
+

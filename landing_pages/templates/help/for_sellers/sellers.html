@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Getting Paid</h1>
+    <div class="content">
+        <p>
+            ToroGrub makes it easy to post, sell, and get paid for your items when you sell in person.
+        </p>
+        <h2 class="title">Cash payments for in-person sales</h2>
+        <p>
+            If you meet up with a buyer in person, our first recommendation is that you use cash as it’s the safest payment option. However,
+            perhaps you and your fellow CSUDH student may prefer using your phone to complete the transaction.
+            
+            At the very least, steer clear of the following:
+            <li>Checks (personal, certified, or cashier’s)</li>
+            <li>Cryptocurrency</li>
+            <li>Gift cards</li>
+            <li>Any other forms of payment</li>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

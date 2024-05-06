@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Creating a ToroGrub account</h1>
+    <div class="content">
+        <p>
+            Creating a ToroGrub account is quick and simple!
+        </p>
+        <h2 class="title">Create an account</h2>
+        <p>
+            To create a ToroGrub account, complete the following steps:
+            <li>Head to the Reigster tab from the header section.</li>
+            <li>On the Register page, input the info you want to set up your account with the following fields:</li>
+            <li>Email: This option allows you to set up an account with a unique email address.</li>
+            <li>Username: This name will display on your public profile to other ToroGrub users and is a reflection of you or your page. 
+                You can use your real name, your business name, or a nickname. Just make sure the name you choose is appropriate and 
+                respectful to the community. Your name is a part of your reputation and can affect if buyers or sellers want to work with you.</li>
+            <li>Password: Input the password you'd like to secure your account with. Then, enter your password again in the second field to ensure they match.</li>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

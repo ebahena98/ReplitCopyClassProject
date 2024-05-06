@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Buyers</h1>
+    <div class="content">
+        <p>
+            If you're meeting a seller, be ready to pay in either cash or through your phone. When you meet, examine the food carefully.
+            If you like the food and it is described as listed, give the seller the amount you agreed to. 
+        </p>
+        <h2 class="title">Tips for buyers</h2>
+        <p>
+            <li>Take a good look at the photo, description, and condition of anything you’re interested in. The photo should show the actual food for sale, not a catalog photo.</li>
+            <li>If anything’s unclear or you want more details, send a message the seller.</li>
+            <li>If you want a closer look at something before you offer, message the seller to ask them to add an additional photo to the listing. Let them know if there are particular details you’d like to see.</li>
+            <li>Be respectful and open to counter-offers.</li>
+            <li>If you find a food on ToroGrub that isn't allowed under our Posting rules, or a seller seems suspicious, report it so we can investigate.</li>
+        </p>
+        <h2 class="title">Meet during normal business hours</h2>
+        <p>
+            Whenever you can, schedule your MeetUps to take place during regular business hours, preferably in daylight. 
+            Most Community MeetUp Spots are situated in front of local businesses or police stations. When they’re open 
+            for business, they tend to get more foot traffic and provide a safe place to seek shelter if needed.
+        </p>
+    </div>
+</div>
+
+{% endblock %}

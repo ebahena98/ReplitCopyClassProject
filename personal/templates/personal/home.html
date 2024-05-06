@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style type="text/css">
+
+	@media (max-width: 768px) { 
+		.right-column{
+			margin-left: 0px;
+		}
+	}
+
+	@media (min-width: 768px) { 
+		.right-column{
+			margin-left: 20px;
+		}
+	}
+
+	.blog-post-container{
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.create-post-bar{
+		background-color: #fff;
+		margin-bottom:20px;
+	}
+
+	.left-column{
+		padding:0px;
+	}
+
+	.right-column{
+		padding:0px;
+	}
+	.lead{
+		font-size: 17px;
+	}
+</style>
+<!-- Header section with pricing information -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Feeling hungry?</h1>
+    <p class="lead">Feel free to look around and see what food options are being sold at this time by other students!</p>
+</div>
+
+<!-- main content -->
+<div class="container">
+	<div class="row">
+
+		<!-- post feed -->
+		<div class="left-column col-lg-7 offset-lg-1">
+
+			<!-- Top 'create post' bar -->
+			<div class="d-lg-none mb-3">
+				<div class="card m-auto d-flex flex-column p-3">
+					<p class="lead">Tap the create button down below and share foods you'd like to sell!</p>
+					<p class="m-auto"><a class="btn btn-primary" href="{% url 'post:create' %}">Create Post</a></p>
+				</div>
+			</div>
+			<!-- end Top 'create post' bar -->
+
+			<!-- User Post -->
+			{% if user_posts %}
+				{% for post in user_posts %}
+					<div class="user-post-container">
+						{% include 'post/snippets/post_snippet.html' with user_post=post %}
+					</div>
+				{% endfor %}
+			{% else %}
+				<div class="user-post-container">
+					{% include 'post/snippets/post_snippet.html' with query=query %}
+				</div>
+			{% endif %}
+			<!-- End User Post -->
+
+		<!-- Pagination -->
+		{% include 'post/snippets/post_pagination.html' with user_posts=user_posts %}
+
+		</div>
+		<!-- end post feed -->
+
+
+		<!-- Right 'create post' column  -->
+		<div class="right-column col-lg-3 d-lg-flex d-none flex-column">
+
+			<div class="card create-post-bar d-flex flex-column p-3">
+				<p class="lead">Tap the create button down below and share foods you'd like to sell!</p>
+				<p class="m-auto"><a class="btn btn-primary" href="{% url 'post:create' %}">Create post</a></p>
+			</div>
+		
+		</div>
+		<!-- end Right 'create post' column  -->
+	</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+    .help-title {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .help-content {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Center the buttons */
+    .help-buttons-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 250px; /* Add margin to the bottom */
+    }
+
+    /* Add space between buttons */
+    .help-button {
+        margin-bottom: 50px;
+        width: 200px;
+    }
+        /* Change button color to HEX #860038 */
+      /* Change button color to HEX #860038 */
+      .btn-primary {
+        background-color: #860038 !important;
+        border-color: #860038 !important;
+    }
+    .btn-primary:hover {
+        background-color: #EFBA08 !important;
+        border-color: #EFBA08 !important;
+    }
+    
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="help-title">How can we help you?</h1>
+    <div class="help-content">
+</div>
+
+<!-- Buttons for different help topics -->
+<div class="row justify-content-center help-buttons-container">
+    <div class="col-md-6"> <!-- Changed from col-md-3 to col-md-6 -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'safety' %}" class="btn btn-primary btn-block">Community Safety</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'rules' %}" class="btn btn-primary btn-block">Rules and Policies</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'buyers' %}" class="btn btn-primary btn-block">For Buyers</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'sellers' %}" class="btn btn-primary btn-block">For Sellers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6"> <!-- Changed from col-md-3 to col-md-6 -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'starting' %}" class="btn btn-primary btn-block">Starting Out</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-block">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- Center the last button -->
+            <div class="col-md-6">
+                <div class="help-button">
+                    <a href="{% url 'your_account' %}" class="btn btn-primary btn-block">Your Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

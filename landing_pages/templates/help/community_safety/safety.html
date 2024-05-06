@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Safety tips for meeting up</h1>
+    <div class="content">
+        <p>
+            When you’re meeting with a buyer or seller in person, it’s important to take 
+            sensible precautions to stay safe and avoid scams. Here are some tips to help 
+            you have a positive MeetUp experience.
+        </p>
+        <h2 class="title">Suggest a MeetUp location</h2>
+        <p>
+            If you’re ready to meet in person, you’ll need to pick a location where you feel 
+            safe to conduct the transaction. However, we understand that these options may not work for everyone. 
+            If you’re meeting at an unofficial location, just make sure to choose a public place with lots 
+            of people, good lighting, and camera surveillance if possible. For your safety, we don’t recommend 
+            meeting at your home, but instead finding a neutral location to conduct your trades.
+        </p>
+        <h2 class="title">Meet during normal business hours</h2>
+        <p>
+            Whenever you can, schedule your MeetUps to take place during regular business hours, preferably in daylight. 
+            Most Community MeetUp Spots are situated in front of local businesses or police stations. When they’re open 
+            for business, they tend to get more foot traffic and provide a safe place to seek shelter if needed.
+        </p>
+        <h2 class="title">Beware last-minute requests to relocate</h2>
+        <p>
+            When you agree on a MeetUp Spot, be cautious of last-minute requests to change the meeting location. 
+            This is a tactic that scammers use to lure people to unsafe locations. For example, the other person 
+            may message you 5 minutes before your MeetUp to say they’re having car trouble. Then, they’ll ask you 
+            to come to a new location. To protect yourself from these types of scams, always decline last-minute 
+            requests to relocate or to follow someone to a different location.
+        </p>
+        <h2 class="title">Don’t go to a MeetUp if it doesn’t feel right</h2>
+        <p>
+            Most importantly, if something feels off, trust your instincts. Don’t meet if it doesn’t feel safe. 
+            If you’re interacting with someone suspicious, help protect our community by reporting them to.
+        </p>
+    </div>
+</div>
+
+{% endblock %}
+

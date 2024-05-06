@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Contact Information</h1>
+    <div class="content">
+        <p>
+            If you are experiencing any issues with the ToroGrub platform, feel free to contact us with the information below:
+        
+            <li>ToroGrub email:...</li>
+            <li>ToroGrub  </li>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

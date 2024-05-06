@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Posting rules</h1>
+    <div class="content">
+        <p>
+            To help make the buying and selling experience enjoyable for everyone, 
+            all users are expected to follow these rules when posting items.
+        </p>
+        <h2 class="title">Accounts</h2>
+        <p>
+            Users are expected to strictly adhere to the following expectations:
+            <li>Use your true identity and honestly represent yourself in your user account and in all communications with other users.</li>
+            <li>Represent yourself in a respectful way when creating your account and custom profile link. </li>
+            <li>Have one account per user or business (not multiple accounts per user or business).</li>
+            <li>Don’t create accounts designed to impersonate someone else.</li>
+            <li>Don’t use a throw-away email address. This signals to us that you might not be here for the right reasons and we will consider this fraudulent behavior.</li>
+            <li>Don’t use emulators or third-party sites to post on OfferUp.</li> 
+            <li>You must be the owner of your item.</li>
+        </p>
+        <h2 class="title">Images</h2>
+        <p>
+            To allow buyers to get a true feel for the items you’re selling, users are expected 
+            to only post images that meet these guidelines:
+            <li>Always include an image of the item. Listings with no image, including those with an image that contains only text, aren't allowed.</li>
+            <li>Include high-quality, well-lit images.</li>
+            <li>Keep images clean by not adding extra stickers or text.</li>
+            <li>Post an image of the actual item, not a catalog or stock photo.</li>
+            <li>Use your own images. Don't use images that infringe on the intellectual property rights of others.</li>
+            <li>Keep NSFW images off the platform</li>
+        </p>
+        <h2 class="title">Duplicate posts</h2>
+        <p>
+            Multiple posts showing identical items from the same seller can be confusing to buyers, and difficult to manage for sellers. 
+            Even if you have more than one of the same item, please list one at a time. Don't post the same item in more than one listing 
+            or in multiple categories.
+        </p>
+        <h2 class="title">Prohibited items</h2>
+        <p>
+            This platform is only designed for the use of selling and buying foods. Other various products that are unrelated to 
+            food are not allowed to be sold on the ToroGrub platform.
+        </p>
+    </div>
+</div>
+
+{% endblock %}

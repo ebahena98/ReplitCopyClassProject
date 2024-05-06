@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Base, Header, and Footer are developed as
+    separate components for cleaniness and organization -->
+<html>
+<!-- Root element that wraps the entire HTML content -->
+    <head>
+
+        <!-- Project label "ToroGrub" set as the title tab -->
+        <title>ToroGrub</title>
+
+        {% include 'snippets/header.html' %}
+
+    </head>
+
+    <body>
+    <!-- Main Body -->
+        <!-- This CSS style allows the page 
+            to move both up and down as needed
+                while within the height of the viewport -->
+        <style type = "text/css">
+            .main{
+                min-height:100vh;
+                height:100%;
+            }
+        </style>
+        <div class = "main">
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+        <!-- End Body -->
+        {% include 'snippets/footer.html' %}
+    </body>
+
+</html>

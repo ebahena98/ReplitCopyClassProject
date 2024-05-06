@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Add your CSS styles here */
+
+    .safety-title {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Additional styling for the paragraph */
+    .content {
+        color: #333; /* Change paragraph text color */
+        font-style: italic; /* Make the text italic */
+        text-align: justify; /* Justify the text */
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Container for displaying password reset confirmation -->
+<div class="container">
+    <h1 class="safety-title">Your Account</h1>
+    <div class="content">
+        <p>
+            Welcome to our platform's account information section, where managing your personal details is 
+            made simple and secure. Your account serves as the gateway to unlocking a multitude of features tailored 
+            to enhance your experience. From updating your profile information to managing privacy settings, 
+            our intuitive interface empowers you to stay in control of your account effortlessly. 
+            Whether you're looking to modify your contact details, review your purchase history, or 
+            customize notification preferences, our platform ensures that your account information 
+            is always up-to-date and accessible whenever you need it. With a commitment to privacy and 
+            data security, rest assured that your information is safeguarded every step of the way. 
+            Explore our account management tools today and discover the ease and convenience of personalized 
+            account information management.
+        </p>
+    </div>
+</div>
+
+{% endblock %}
